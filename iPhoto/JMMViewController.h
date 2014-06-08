@@ -8,6 +8,33 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JMMViewController : UIViewController
+@interface JMMViewController : UIViewController <UIImagePickerControllerDelegate>
+
+{
+
+
+    UIImageView *imageView;
+    UIButton *abrirGaleria;
+    UIButton *tomarFoto;
+    UIButton *compartir;
+    
+    
+
+
+}
+
+
+
+@property (nonatomic, strong) IBOutlet UIImageView *imageView;
+@property (nonatomic, strong) IBOutlet UIButton *abrirGaleria;
+@property (nonatomic, strong) IBOutlet UIButton *tomarFoto;
+
+- (IBAction)compartirButton:(id)sender;
+
+
+
+
+
+
 
 @end
