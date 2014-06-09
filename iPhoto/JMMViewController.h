@@ -13,7 +13,7 @@
 {
 
 
-    UIImageView *imageView;
+    UIImageView *fotoBaseView;
     UIButton *abrirGaleria;
     UIButton *tomarFoto;
     UIButton *compartir;
@@ -25,7 +25,7 @@
 
 
 
-@property (nonatomic, strong) IBOutlet UIImageView *imageView;
+@property (nonatomic, strong) IBOutlet UIImageView *fotoBaseView;
 @property (nonatomic, strong) IBOutlet UIButton *abrirGaleria;
 @property (nonatomic, strong) IBOutlet UIButton *tomarFoto;
 

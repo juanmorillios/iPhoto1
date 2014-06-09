@@ -21,6 +21,7 @@
 		B92425D0193A431E002522B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B92425B2193A431B002522B7 /* UIKit.framework */; };
 		B92425D8193A431E002522B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B92425D6193A431E002522B7 /* InfoPlist.strings */; };
 		B92425DA193A431E002522B7 /* iPhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B92425D9193A431E002522B7 /* iPhotoTests.m */; };
+		B943EA9819462600007D02F3 /* icono-del-corazon-671776.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B943EA9719462600007D02F3 /* icono-del-corazon-671776.jpg */; };
 		B9EB7FC2194508FB0067B41C /* 714-camera.png in Resources */ = {isa = PBXBuildFile; fileRef = B9EB7FC0194508FB0067B41C /* 714-camera.png */; };
 		B9EB7FC3194508FB0067B41C /* 714-camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9EB7FC1194508FB0067B41C /* 714-camera@2x.png */; };
 		B9EB7FC5194509EC0067B41C /* 879-mountains@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9EB7FC4194509EC0067B41C /* 879-mountains@2x.png */; };
@@ -67,9 +68,10 @@
 		B92425D5193A431E002522B7 /* iPhotoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iPhotoTests-Info.plist"; sourceTree = "<group>"; };
 		B92425D7193A431E002522B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B92425D9193A431E002522B7 /* iPhotoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iPhotoTests.m; sourceTree = "<group>"; };
+		B943EA9719462600007D02F3 /* icono-del-corazon-671776.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "icono-del-corazon-671776.jpg"; path = "iPhoto/icono-del-corazon-671776.jpg"; sourceTree = "<group>"; };
 		B9EB7FC0194508FB0067B41C /* 714-camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "714-camera.png"; sourceTree = "<group>"; };
 		B9EB7FC1194508FB0067B41C /* 714-camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "714-camera@2x.png"; sourceTree = "<group>"; };
-		B9EB7FC4194509EC0067B41C /* 879-mountains@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "879-mountains@2x.png"; sourceTree = "<group>"; };
+		B9EB7FC4194509EC0067B41C /* 879-mountains@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "879-mountains@2x.png"; path = "iPhoto/879-mountains@2x.png"; sourceTree = "<group>"; };
 		B9EB7FC619450A0D0067B41C /* 879-mountains.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "879-mountains.png"; sourceTree = "<group>"; };
 		B9EB7FC8194526A30067B41C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		B9EB7FCA194527520067B41C /* iPhoto.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = iPhoto.entitlements; sourceTree = "<group>"; };
@@ -147,7 +149,6 @@
 			children = (
 				B9EB7FCA194527520067B41C /* iPhoto.entitlements */,
 				B92425BD193A431C002522B7 /* JMMAppDelegate.h */,
-				B9EB7FC4194509EC0067B41C /* 879-mountains@2x.png */,
 				B92425BE193A431C002522B7 /* JMMAppDelegate.m */,
 				B92425C0193A431C002522B7 /* Main.storyboard */,
 				B92425C3193A431C002522B7 /* JMMViewController.h */,
@@ -190,6 +191,8 @@
 		B9EB7FCB19452D140067B41C /* imagenes */ = {
 			isa = PBXGroup;
 			children = (
+				B943EA9719462600007D02F3 /* icono-del-corazon-671776.jpg */,
+				B9EB7FC4194509EC0067B41C /* 879-mountains@2x.png */,
 				B9EB7FCC19452D240067B41C /* Icon-60.png */,
 				B9EB7FCD19452D240067B41C /* Icon-60@2x.png */,
 				B9EB7FCE19452D240067B41C /* Icon-76.png */,
@@ -302,6 +305,7 @@
 				B9EB7FC5194509EC0067B41C /* 879-mountains@2x.png in Resources */,
 				B9EB7FC3194508FB0067B41C /* 714-camera@2x.png in Resources */,
 				B9EB7FDD19452D240067B41C /* Icon-Small@2x.png in Resources */,
+				B943EA9819462600007D02F3 /* icono-del-corazon-671776.jpg in Resources */,
 				B9EB7FD619452D240067B41C /* Icon-60.png in Resources */,
 				B92425C7193A431D002522B7 /* Images.xcassets in Resources */,
 				B9EB7FDE19452D240067B41C /* iTunesArtwork.png in Resources */,

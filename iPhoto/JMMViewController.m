@@ -14,7 +14,7 @@
 
 @implementation JMMViewController
 
-@synthesize imageView, abrirGaleria, tomarFoto;
+@synthesize fotoBaseView, abrirGaleria, tomarFoto;
 
 - (void)viewDidLoad
 {
@@ -39,9 +39,11 @@
 
 - (IBAction)abrirGaleria:(id)sender {
     
+    
     // Inicia el Controlador
     UIImagePickerController * picker = [[UIImagePickerController alloc] init];
-    [self extracted_method:picker];
+    // Define el Delegate
+    picker.delegate = self;
     // Establece el origen de la imagen
     picker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
     // Agrega la vista del controlador a la pantalla
@@ -49,7 +51,7 @@
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
     {
         UIPopoverController *popover = [[UIPopoverController alloc] initWithContentViewController:picker];
-        
+       
         [popover presentPopoverFromRect:CGRectMake(200, 940.0, 0.0, 0.0)
                                  inView:self.view
                permittedArrowDirections:UIPopoverArrowDirectionAny
@@ -57,7 +59,10 @@
     }
     else
         [self presentModalViewController:picker animated:YES];
-}
+    
+    
+    
+   }
 
 
 - (IBAction)tomarFoto:(id)sender
@@ -74,7 +79,7 @@
     // Quita la vista del controlador
     [picker dismissModalViewControllerAnimated:YES];
     // Establece la imagen tomada en el objeto UIImageView
-    imageView.image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
+    fotoBaseView.image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
 }
 
 
@@ -83,7 +88,7 @@
     
     NSString *textoPorCompartir = [NSString stringWithFormat:@"Mira mi última foto que , espero que te guste %@! #JuanMorillios", nil];
     
-    NSArray *cosasPorCompartir = @[textoPorCompartir, imageView.image];
+    NSArray *cosasPorCompartir = @[textoPorCompartir, fotoBaseView.image];
     
     UIActivityViewController *compartir = [[UIActivityViewController alloc] initWithActivityItems:cosasPorCompartir applicationActivities:nil];
     
