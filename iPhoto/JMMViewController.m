@@ -32,12 +32,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (id)extracted_method:(UIImagePickerController *)picker {
+    // Define el Delegate
+    return picker.delegate = self;
+}
+
 - (IBAction)abrirGaleria:(id)sender {
     
     // Inicia el Controlador
     UIImagePickerController * picker = [[UIImagePickerController alloc] init];
-    // Define el Delegate
-    picker.delegate = self;
+    [self extracted_method:picker];
     // Establece el origen de la imagen
     picker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
     // Agrega la vista del controlador a la pantalla
