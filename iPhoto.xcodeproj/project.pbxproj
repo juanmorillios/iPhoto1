@@ -22,6 +22,7 @@
 		B92425D8193A431E002522B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B92425D6193A431E002522B7 /* InfoPlist.strings */; };
 		B92425DA193A431E002522B7 /* iPhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B92425D9193A431E002522B7 /* iPhotoTests.m */; };
 		B943EA9819462600007D02F3 /* icono-del-corazon-671776.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B943EA9719462600007D02F3 /* icono-del-corazon-671776.jpg */; };
+		B943EA9C19463152007D02F3 /* JMMFavoritosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B943EA9B19463152007D02F3 /* JMMFavoritosTableViewController.m */; };
 		B9EB7FC2194508FB0067B41C /* 714-camera.png in Resources */ = {isa = PBXBuildFile; fileRef = B9EB7FC0194508FB0067B41C /* 714-camera.png */; };
 		B9EB7FC3194508FB0067B41C /* 714-camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9EB7FC1194508FB0067B41C /* 714-camera@2x.png */; };
 		B9EB7FC5194509EC0067B41C /* 879-mountains@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9EB7FC4194509EC0067B41C /* 879-mountains@2x.png */; };
@@ -37,6 +38,18 @@
 		B9EB7FDD19452D240067B41C /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9EB7FD319452D240067B41C /* Icon-Small@2x.png */; };
 		B9EB7FDE19452D240067B41C /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = B9EB7FD419452D240067B41C /* iTunesArtwork.png */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		B943EA9919462ECE007D02F3 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = file.bplist;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# builtin-copyPlist\n";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXContainerItemProxy section */
 		B92425D1193A431E002522B7 /* PBXContainerItemProxy */ = {
@@ -69,6 +82,8 @@
 		B92425D7193A431E002522B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B92425D9193A431E002522B7 /* iPhotoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iPhotoTests.m; sourceTree = "<group>"; };
 		B943EA9719462600007D02F3 /* icono-del-corazon-671776.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "icono-del-corazon-671776.jpg"; path = "iPhoto/icono-del-corazon-671776.jpg"; sourceTree = "<group>"; };
+		B943EA9A19463152007D02F3 /* JMMFavoritosTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMMFavoritosTableViewController.h; sourceTree = "<group>"; };
+		B943EA9B19463152007D02F3 /* JMMFavoritosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMMFavoritosTableViewController.m; sourceTree = "<group>"; };
 		B9EB7FC0194508FB0067B41C /* 714-camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "714-camera.png"; sourceTree = "<group>"; };
 		B9EB7FC1194508FB0067B41C /* 714-camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "714-camera@2x.png"; sourceTree = "<group>"; };
 		B9EB7FC4194509EC0067B41C /* 879-mountains@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "879-mountains@2x.png"; path = "iPhoto/879-mountains@2x.png"; sourceTree = "<group>"; };
@@ -115,6 +130,8 @@
 		B92425A2193A431A002522B7 = {
 			isa = PBXGroup;
 			children = (
+				B943EA9A19463152007D02F3 /* JMMFavoritosTableViewController.h */,
+				B943EA9B19463152007D02F3 /* JMMFavoritosTableViewController.m */,
 				B9EB7FCB19452D140067B41C /* imagenes */,
 				B92425B4193A431B002522B7 /* iPhoto */,
 				B92425D3193A431E002522B7 /* iPhotoTests */,
@@ -222,6 +239,7 @@
 				B92425A9193A431A002522B7 /* Resources */,
 			);
 			buildRules = (
+				B943EA9919462ECE007D02F3 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -336,6 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B943EA9C19463152007D02F3 /* JMMFavoritosTableViewController.m in Sources */,
 				B92425BB193A431C002522B7 /* main.m in Sources */,
 				B92425BF193A431C002522B7 /* JMMAppDelegate.m in Sources */,
 				B92425C5193A431C002522B7 /* JMMViewController.m in Sources */,

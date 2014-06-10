@@ -29,7 +29,7 @@
 @property (nonatomic, strong) IBOutlet UIButton *abrirGaleria;
 @property (nonatomic, strong) IBOutlet UIButton *tomarFoto;
 
-- (IBAction)compartirButton:(id)sender;
+- (IBAction)enviarFoto:(id)sender;
 
 
 
